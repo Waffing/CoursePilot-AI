@@ -1,0 +1,12 @@
+{
+  "name": "coursepilot-ai",
+  "version": "0.2.8.2",
+  "private": true,
+  "description": "Configurable model and web-search userscript for course workflows",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node --check scripts/coursepilot-ai.user.js",
+    "test": "node --test tests/model-adapter.test.cjs"
+  }
+}

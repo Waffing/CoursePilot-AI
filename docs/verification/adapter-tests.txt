@@ -1,0 +1,250 @@
+TAP version 13
+# Subtest: original file is unchanged
+ok 1 - original file is unchanged
+  ---
+  duration_ms: 2.5089
+  type: 'test'
+  ...
+# Subtest: playback, chapter submission, exams, routing and hooks are preserved
+ok 2 - playback, chapter submission, exams, routing and hooks are preserved
+  ---
+  duration_ms: 1.8604
+  type: 'test'
+  ...
+# Subtest: model endpoint supports origin, versioned base, gateway prefix and full path
+ok 3 - model endpoint supports origin, versioned base, gateway prefix and full path
+  ---
+  duration_ms: 4.7864
+  type: 'test'
+  ...
+# Subtest: endpoint rejects unsafe remote HTTP and embedded credentials or query parameters
+ok 4 - endpoint rejects unsafe remote HTTP and embedded credentials or query parameters
+  ---
+  duration_ms: 1.6432
+  type: 'test'
+  ...
+# Subtest: single-choice index maps to the original option text and response contract
+ok 5 - single-choice index maps to the original option text and response contract
+  ---
+  duration_ms: 2.5646
+  type: 'test'
+  ...
+# Subtest: multiple-choice letters, numbers and exact text map to original options
+ok 6 - multiple-choice letters, numbers and exact text map to original options
+  ---
+  duration_ms: 1.9636
+  type: 'test'
+  ...
+# Subtest: invalid choice indices, duplicate choices and multiple single-choice answers fail
+ok 7 - invalid choice indices, duplicate choices and multiple single-choice answers fail
+  ---
+  duration_ms: 1.6935
+  type: 'test'
+  ...
+# Subtest: boolean answers normalize to the words required by existing judgement handlers
+ok 8 - boolean answers normalize to the words required by existing judgement handlers
+  ---
+  duration_ms: 2.0808
+  type: 'test'
+  ...
+# Subtest: fill-in answers preserve order, including repeated text and zero
+ok 9 - fill-in answers preserve order, including repeated text and zero
+  ---
+  duration_ms: 1.6082
+  type: 'test'
+  ...
+# Subtest: short answers, JSON fences and text content arrays are supported
+ok 10 - short answers, JSON fences and text content arrays are supported
+  ---
+  duration_ms: 2.5488
+  type: 'test'
+  ...
+# Subtest: unanswerable, malformed, refused and empty responses do not become answers
+ok 11 - unanswerable, malformed, refused and empty responses do not become answers
+  ---
+  duration_ms: 2.8184
+  type: 'test'
+  ...
+# Subtest: HTTP errors are classified without rendering provider-controlled HTML
+ok 12 - HTTP errors are classified without rendering provider-controlled HTML
+  ---
+  duration_ms: 1.5812
+  type: 'test'
+  ...
+# Subtest: old question-bank configuration keeps existing settings and clears old credentials
+ok 13 - old question-bank configuration keeps existing settings and clears old credentials
+  ---
+  duration_ms: 2.4737
+  type: 'test'
+  ...
+# Subtest: API key persists in GM storage only and model settings survive reloading
+ok 14 - API key persists in GM storage only and model settings survive reloading
+  ---
+  duration_ms: 3.5938
+  type: 'test'
+  ...
+# Subtest: model configuration is required before any network request
+ok 15 - model configuration is required before any network request
+  ---
+  duration_ms: 2.2824
+  type: 'test'
+  ...
+# Subtest: request uses the selected model, Bearer auth and the legacy result contract
+ok 16 - request uses the selected model, Bearer auth and the legacy result contract
+  ---
+  duration_ms: 6.205
+  type: 'test'
+  ...
+# Subtest: local services work without an API key
+ok 17 - local services work without an API key
+  ---
+  duration_ms: 3.5199
+  type: 'test'
+  ...
+# Subtest: network errors, timeout, invalid JSON and non-JSON HTTP errors are handled
+ok 18 - network errors, timeout, invalid JSON and non-JSON HTTP errors are handled
+  ---
+  duration_ms: 8.4183
+  type: 'test'
+  ...
+# Subtest: aborted requests and late responses cannot publish an answer
+ok 19 - aborted requests and late responses cannot publish an answer
+  ---
+  duration_ms: 3.0612
+  type: 'test'
+  ...
+# Subtest: a page change while a model request is pending discards its answer
+ok 20 - a page change while a model request is pending discards its answer
+  ---
+  duration_ms: 1.9252
+  type: 'test'
+  ...
+# Subtest: a model answer flows through the original question handler and selects the option
+ok 21 - a model answer flows through the original question handler and selects the option
+  ---
+  duration_ms: 4.3916
+  type: 'test'
+  ...
+# Subtest: metadata, UI and key controls match the new answer source
+ok 22 - metadata, UI and key controls match the new answer source
+  ---
+  duration_ms: 0.403
+  type: 'test'
+  ...
+# Subtest: native protocols derive answer and model-list endpoints from complete URLs
+ok 23 - native protocols derive answer and model-list endpoints from complete URLs
+  ---
+  duration_ms: 1.4948
+  type: 'test'
+  ...
+# Subtest: provider authentication never puts keys into URLs or another provider header
+ok 24 - provider authentication never puts keys into URLs or another provider header
+  ---
+  duration_ms: 1.4036
+  type: 'test'
+  ...
+# Subtest: all four protocols construct matching native request and response formats
+ok 25 - all four protocols construct matching native request and response formats
+  ---
+  duration_ms: 1.9182
+  type: 'test'
+  ...
+# Subtest: generation preferences are optional and cannot remove the answer schema
+ok 26 - generation preferences are optional and cannot remove the answer schema
+  ---
+  duration_ms: 1.4189
+  type: 'test'
+  ...
+# Subtest: OpenAI-compatible model list is deduplicated and no model generation is requested
+ok 27 - OpenAI-compatible model list is deduplicated and no model generation is requested
+  ---
+  duration_ms: 14.0672
+  type: 'test'
+  ...
+# Subtest: Gemini model discovery follows pagination and filters non-generative models
+ok 28 - Gemini model discovery follows pagination and filters non-generative models
+  ---
+  duration_ms: 2.5939
+  type: 'test'
+  ...
+# Subtest: Anthropic model discovery follows cursors and preserves authentication
+ok 29 - Anthropic model discovery follows cursors and preserves authentication
+  ---
+  duration_ms: 2.6696
+  type: 'test'
+  ...
+# Subtest: model discovery reports unsupported lists, authorization errors and cancellation
+ok 30 - model discovery reports unsupported lists, authorization errors and cancellation
+  ---
+  duration_ms: 5.0461
+  type: 'test'
+  ...
+# Subtest: switching providers restores each profile without sharing credentials
+ok 31 - switching providers restores each profile without sharing credentials
+  ---
+  duration_ms: 2.3618
+  type: 'test'
+  ...
+# Subtest: search credentials remain in GM storage and survive reloading
+ok 32 - search credentials remain in GM storage and survive reloading
+  ---
+  duration_ms: 4.7089
+  type: 'test'
+  ...
+# Subtest: Tavily retrieves real response records before generation using a separate key
+ok 33 - Tavily retrieves real response records before generation using a separate key
+  ---
+  duration_ms: 3.7447
+  type: 'test'
+  ...
+# Subtest: a failed or empty Tavily search does not silently invoke the model
+ok 34 - a failed or empty Tavily search does not silently invoke the model
+  ---
+  duration_ms: 4.384
+  type: 'test'
+  ...
+# Subtest: native search uses protocol-specific tools and rejects unsupported chat services
+ok 35 - native search uses protocol-specific tools and rejects unsupported chat services
+  ---
+  duration_ms: 4.0651
+  type: 'test'
+  ...
+# Subtest: native search records only service-returned sources and reports missing search evidence
+ok 36 - native search records only service-returned sources and reports missing search evidence
+  ---
+  duration_ms: 2.4269
+  type: 'test'
+  ...
+# Subtest: personalized timeout and token parameters are included only when configured
+ok 37 - personalized timeout and token parameters are included only when configured
+  ---
+  duration_ms: 2.7247
+  type: 'test'
+  ...
+# Subtest: malformed successful provider payloads return errors without interrupting the caller
+ok 38 - malformed successful provider payloads return errors without interrupting the caller
+  ---
+  duration_ms: 13.6357
+  type: 'test'
+  ...
+# Subtest: Anthropic temperature respects the service limit and model identifiers are trimmed
+ok 39 - Anthropic temperature respects the service limit and model identifiers are trimmed
+  ---
+  duration_ms: 2.1446
+  type: 'test'
+  ...
+# Subtest: Gemini preserves service search suggestions along with source links
+ok 40 - Gemini preserves service search suggestions along with source links
+  ---
+  duration_ms: 1.5251
+  type: 'test'
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 40
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 366.8637

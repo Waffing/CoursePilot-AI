@@ -1,0 +1,23 @@
+{
+  "result": "passed",
+  "checks": [
+    "Automatic model discovery and selection",
+    "Connection test uses the configured mock model",
+    "Desktop connection controls fit",
+    "Settings tabs appear above their content",
+    "Personalized controls update the real reactive store",
+    "Search toggle, backend configuration and search-before-answer test",
+    "Provider switching restores profiles and isolates keys",
+    "Model list authentication error is visible",
+    "Editing settings cancels a pending connection test",
+    "Settings survive remount; page configuration excludes keys",
+    "Mobile connection controls fit at 390px",
+    "Mobile parameter controls fit at 390px",
+    "Mobile search controls fit at 390px",
+    "Search controls remain accessible by scrolling on mobile",
+    "Search controls fit at 320px",
+    "Google suggestions render in an isolated frame without active content"
+  ],
+  "errors": [],
+  "scope": "Real Vue/Element Plus in Chromium with mocked GM requests; no real provider or course submission."
+}

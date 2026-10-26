@@ -1,0 +1,2 @@
+9882bb5bb8acb4e207c1027e9b6df9802be067543f5a8188332bb47e1f7afd76  scripts/coursepilot-ai.user.js
+be4da1e080e74b9269c189ca67e48f2dfcd20d3e7fe279461ae1ec386291d1f8  upstream/greasyfork-488083.original.user.js

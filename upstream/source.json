@@ -1,0 +1,10 @@
+{
+  "scriptId": 488083,
+  "source": "https://greasyfork.org/scripts/488083",
+  "author": "isMobile",
+  "namespace": "noshuang",
+  "version": "0.2.8",
+  "license": "MIT",
+  "sha256": "be4da1e080e74b9269c189ca67e48f2dfcd20d3e7fe279461ae1ec386291d1f8",
+  "localReadPolicy": "Analyze this preserved source. Download a newer upstream version only when explicitly requested."
+}
